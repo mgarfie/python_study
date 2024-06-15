@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学成在线</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="shortcut icon" href="../static/favicon.ico" type="image/x-icon" />
+    <style>
+        .nav .center {
+            background-image: url(../static/../static/images/banner2_2.jpg);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header w">
+        <img src="../static/images/logo.png" alt="" class="logo">
+        <ul class="ul">
+            <li><a href="#" style="font-weight: 900;">首页</a></li>
+            <li><a href="#" style="font-weight: 900;">课程</a></li>
+            <li><a href="#" style="font-weight: 900;">职业规划</a></li>
+        </ul>
+        <input type="text">
+        <img src="../static/images/btn.png" alt="" class="ptn">
+        <<a href="{{ url_for('signin') }}" class="login" id="signin_signup">登陆与注册</a>
+
+    </div>
+    <div class="nav">
+        <div class="center w">
+            <div class="left">
+                <ul>
+                    <!-- &gt; -->
+                    <li><a href="#">前端开发<span>&gt;</span></a></li>
+                    <li><a href="#">后端开发<span>&gt;</span></a></li>
+                    <li><a href="#">移动开发<span>&gt;</span></a></li>
+                    <li><a href="#">人工只能<span>&gt;</span></a></li>
+                    <li><a href="#">商业预测<span>&gt;</span></a></li>
+                    <li><a href="#">云计算&大数据<span>&gt;</span></a></li>
+                    <li><a href="#">远程&测试<span>&gt;</span></a></li>
+                    <li><a href="#">UI设计<span>&gt;</span></a></li>
+                    <li><a href="#">产品<span>&gt;</span></a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">我的课程表</a></li>
+                    <li><a href="#">继续学习,程序语言设计</a></li>
+                    <li><a href="#">正在学习,使用对象</a></li>
+                    <li><a href="#">继续学习,程序语言设计</a></li>
+                    <li><a href="#">正在学习,使用对象</a></li>
+                    <li><a href="#">继续学习,程序语言设计</a></li>
+                    <li><a href="#">正在学习,使用对象</a></li>
+                    <li>全部课程</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banner w">
+        <ul>
+            <li><a href="#">精品推荐</a></li>
+            <li><a href="#">JQuery</a></li>
+            <li><a href="#">Spark</a></li>
+            <li><a href="#">MySQL</a></li>
+            <li><a href="#">JabaWeb</a></li>
+            <li><a href="#">前端</a></li>
+            <li><a href="#" class="gai">后端</a></li>
+            <li><a href="#" class="right">修改兴趣</a></li>
+        </ul>
+    </div>
+    <div class="box_jp w">
+        <div class="text">
+            <ul>
+                <li><a href="#" class="one">精品推荐</a></li>
+                <li><a href="#" class="two">查看全部</a></li>
+            </ul>
+        </div>
+        <div class="bdy">
+            <div class="shou">
+                <img src="../static/images/hot.png" alt="" class="new">
+                <img src="../static/images/course01.png" alt="">
+                <a href="#">Think PHP 5.0 博客系统实战项目演练</a>
+                <p><span>高级</span><span style="color: gray;">•</span>1125人在学习</p>
+            </div>
+            <div class="shou">
+                <img src="../static/images/new.png" alt="" class="new">
+                <img src="../static/images/course02.png" alt="">
+                <a href="#">Android 网络动态图片加载实战</a>
+                <p><span>高级</span><span style="color: gray;">•</span>357人在学习</p>
+            </div>
+            <div class="shou">
+                <img src="../static/images/course03.png" alt="">
+                <a href="#">Angular2 大前端商城实战项目演练</a>
+                <p><span>高级</span><span style="color: gray;">•</span>2250人在学习</p>
+            </div>
+            <div class="shou">
+                <img src="../static/images/course04.png" alt="">
+                <a href="#">Android APP 实战项目演练</a>
+                <p><span>高级</span><span style="color: gray;">•</span>389人在学习</p>
+            </div>
+            <div class="shou" style="margin-right: 0;">
+                <img src="../static/images/course05.png" alt="">
+                <a href="#">UGUI 源码深度分析案例</a>
+                <p><span>高级</span><span style="color: gray;">•</span>124人在学习</p>
+            </div>
+            <div class="shou">
+                <img src="../static/images/hot.png" alt="" class="new">
+                <img src="../static/images/course01.png" alt="">
+                <a href="#">Think PHP 5.0 博客系统实战项目演练</a>
+                <p><span>高级</span><span style="color: gray;">•</span>1125人在学习</p>
+            </div>
+            <div class="shou">
+                <img src="../static/images/new.png" alt="" class="new">
+                <img src="../static/images/course02.png" alt="">
+                <a href="#">Android 网络动态图片加载实战</a>
+                <p><span>高级</span><span style="color: gray;">•</span>357人在学习</p>
+            </div>
+            <div class="shou">
+                <img src="../static/images/course03.png" alt="">
+                <a href="#">Angular2 大前端商城实战项目演练</a>
+                <p><span>高级</span><span style="color: gray;">•</span>2250人在学习</p>
+            </div>
+            <div class="shou">
+                <img src="../static/images/course04.png" alt="">
+                <a href="#">Android APP 实战项目演练</a>
+                <p><span>高级</span><span style="color: gray;">•</span>389人在学习</p>
+            </div>
+            <div class="shou" style="margin-right: 0;">
+                <img src="../static/images/course05.png" alt="">
+                <a href="#">UGUI 源码深度分析案例</a>
+                <p><span>高级</span><span style="color: gray;">•</span>124人在学习</p>
+            </div>
+        </div>
+    </div>
+    <div class="box_bc w">
+        <div class="text">
+            <ul>
+                <li><a href="#">热门</a></li>
+                <li><a href="#">初级</a></li>
+                <li><a href="#">中级</a></li>
+                <li><a href="#">高级</a></li>
+            </ul>
+        </div>
+        <div class="bdy">
+            <div class="left">
+                <img src="../static/images/PHP.png" alt="">
+            </div>
+            <div class="right">
+                <div class="r_top"><img src="../static/images/图层155.png" alt=""></div>
+                <div class="r_bottom">
+                    <div class="r_size">
+                        <img src="../static/images/course05.png" alt="">
+                        <ul>
+                            <li><a href="#">Android Hybrid App开发实战H5+原生 !</a></li>
+                            <li>*</li>
+                        </ul>
+                    </div>
+                    <div class="r_size">
+                        <img src="../static/images/course06.png" alt="">
+                        <ul>
+                            <li><a href="#">Kami2首页界面切换效果</a></li>
+                            <li>*</li>
+                        </ul>
+                    </div>
+                    <div class="r_size">
+                        <img src="../static/images/course07.png" alt="">
+                        <ul>
+                            <li><a href="#">nity Profller入门</a></li>
+                            <li>*</li>
+                        </ul>
+                    </div>
+                    <div class="r_size">
+                        <img src="../static/images/course08.png" alt="">
+                        <ul>
+                            <li><a href="#">Cocos2d-x 引擎源码中的纹理优化</a></li>
+                            <li>*</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box_bc w box_sj">
+        <div class="text">
+            <ul>
+                <li><a href="#">热门</a></li>
+                <li><a href="#">初级</a></li>
+                <li><a href="#">中级</a></li>
+                <li><a href="#">高级</a></li>
+            </ul>
+        </div>
+        <div class="bdy">
+            <div class="left">
+                <img src="../static/images/PHPs.png" alt="">
+            </div>
+            <div class="right">
+                <div class="r_top"><img src="../static/images/图层 152.png" alt=""></div>
+                <div class="r_bottom">
+                    <div class="r_size">
+                        <img src="../static/images/course06.png" alt="">
+                        <ul>
+                            <li><a href="#">Kami2首页界面切换效果</a></li>
+                            <li>*</li>
+                        </ul>
+                    </div>
+                    <div class="r_size">
+                        <img src="../static/images/course05.png" alt="">
+                        <ul>
+                            <li><a href="#">Android Hybrid APP开发实战 H5+原生！</a></li>
+                            <li>*</li>
+                        </ul>
+                    </div>
+                    <div class="r_size">
+                        <img src="../static/images/course08.png" alt="">
+                        <ul>
+                            <li><a href="#">Cocos2d-x 引擎源码中的纹理优化</a></li>
+                            <li>*</li>
+                        </ul>
+                    </div>
+                    <div class="r_size">
+                        <img src="../static/images/course07.png" alt="">
+                        <ul>
+                            <li><a href="#">nity Profller入门</a></li>
+                            <li>*</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box_jqxx w">
+        <div class="text">
+            <ul>
+                <!-- 机器学习工程师 -->
+                <li><a href="#" class="one">机器学习</a></li>
+                <li><a href="#" class="two">查看全部</a></li>
+            </ul>
+        </div>
+        <div class="bdy">
+            <div class="shou">
+                <img src="../static/images/course05.png" alt="">
+                <a href="#">TAndroid Hybrid APP开发实战 H5+!</a>
+                <p><span>高级</span><span style="color: gray;">•</span>1125人在学习</p>
+            </div>
+            <div class="shou">
+                <img src="../static/images/course08.png" alt="">
+                <a href="#">Cocos2d-x 引擎源码中的纹理优化</a>
+                <p><span>高级</span><span style="color: gray;">•</span>357人在学习</p>
+            </div>
+            <div class="shou">
+                <img src="../static/images/course07.png" alt="">
+                <a href="#">nity Profller入门</a>
+                <p><span>高级</span><span style="color: gray;">•</span>2250人在学习</p>
+            </div>
+            <div class="shou">
+                <img src="../static/images/course09.png" alt="">
+                <a href="#">微软人工智能-数据分析平台</a>
+                <p><span>高级</span><span style="color: gray;">•</span>389人在学习</p>
+            </div>
+            <div class="shou" style="margin-right: 0;">
+                <img src="../static/images/course06.png" alt="">
+                <a href="#">Kami2首页界面切换效果</a>
+                <p><span>高级</span><span style="color: gray;">•</span>124人在学习</p>
+            </div>
+        </div>
+    </div>
+    <div class="box_jqxx box_qdkf w">
+        <div class="text">
+            <ul>
+                <!-- 前端开发工程师 -->
+                <li><a href="#" class="one">前端开发</a></li>
+                <li><a href="#" class="two">查看全部</a></li>
+            </ul>
+        </div>
+        <div class="bdy">
+            <div class="shou">
+                <img src="../static/images/course09.png" alt="">
+                <a href="#">微软人工智能-数据分析平台</a>
+                <p><span>高级</span><span style="color: gray;">•</span>389人在学习</p>
+            </div>
+            <div class="shou">
+                <img src="../static/images/course07.png" alt="">
+                <a href="#">nity Profller入门</a>
+                <p><span>高级</span><span style="color: gray;">•</span>2250人在学习</p>
+            </div>
+            <div class="shou">
+                <img src="../static/images/course08.png" alt="">
+                <a href="#">Cocos2d-x 引擎源码中的纹理优化</a>
+                <p><span>高级</span><span style="color: gray;">•</span>357人在学习</p>
+            </div>
+            <div class="shou">
+                <img src="../static/images/course06.png" alt="">
+                <a href="#">Kami2首页界面切换效果</a>
+                <p><span>高级</span><span style="color: gray;">•</span>124人在学习</p>
+            </div>
+            <div class="shou" style="margin-right: 0;">
+                <img src="../static/images/course05.png" alt="">
+                <a href="#">TAndroid Hybrid APP开发实战 H5+!</a>
+                <p><span>高级</span><span style="color: gray;">•</span>1125人在学习</p>
+            </div>
+        </div>
+    </div>
+    <div class="floot">
+        <div class="center w">
+            <div class="left">
+                <img src="../static/images/logo.png" alt="">
+                <ul>
+                    <li>学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。</li>
+                    <li>© 2017年XTCG Inc.保留所有权利。-沪ICP备15025210号</li>
+                </ul>
+                <div><a href="#">下载APP</a></div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#" data-id="0">关于学成网</a></li>
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#">管理团队</a></li>
+                    <li><a href="#">工作机会</a></li>
+                    <li><a href="#">客户服务</a></li>
+                    <li><a href="#">帮助</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#" data-id="0">新手指南</a></li>
+                    <li><a href="#">如何注册</a></li>
+                    <li><a href="#">如何选课</a></li>
+                    <li><a href="#">如何拿到毕业证</a></li>
+                    <li><a href="#">学分是什么</a></li>
+                    <li><a href="#">考试未通过怎么办</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#" data-id="0">合作伙伴</a></li>
+                    <li><a href="#">合作机构</a></li>
+                    <li><a href="#">合作导师</a></li>
+                    <!-- <li><a href="#">工作机会</a></li>
+                    <li><a href="#">客户服务</a></li>
+                    <li><a href="#">帮助</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fixed">
+        <ul>
+            <li><a href="javascript:;" class="active" data-index="jp">精品推荐</a></li>
+            <li><a href="javascript:;" data-index="bc">编程入门</a></li>
+            <li><a href="javascript:;" data-index="sj">数据分析</a></li>
+            <li><a href="javascript:;" data-index="jqxx">机器学习</a></li>
+            <li><a href="javascript:;" data-index="qdkf">前端开发</a></li>
+            <li><a href="javascript:;" class="top">顶端</a></li>
+        </ul>
+    </div>
+
+    <script>
+        let data = [
+            {
+                src: '../static/images/course01.png',
+                title: 'Think PHP 5.0 博客系统实战项目演练',
+                num: 1125
+            },
+            {
+                src: '../static/images/course02.png',
+                title: 'Android 网络动态图片加载实战',
+                num: 357
+            },
+            {
+                src: '../static/images/course03.png',
+                title: 'Angular2 大前端商城实战项目演练',
+                num: 22250
+            },
+            {
+                src: '../static/images/course04.png',
+                title: 'Android APP 实战项目演练',
+                num: 389
+            },
+            {
+                src: '../static/images/course05.png',
+                title: 'UGUI 源码深度分析案例',
+                num: 124
+            },
+            {
+                src: '../static/images/course06.png',
+                title: 'Kami2首页界面切换效果实战演练',
+                num: 432
+            },
+            {
+                src: '../static/images/course07.png',
+                title: 'UNITY 从入门到精通实战案例',
+                num: 888
+            },
+            {
+                src: '../static/images/course08.png',
+                title: 'Cocos 深度学习你不会错过的实战',
+                num: 590
+            },
+        ]
+        // 侧边栏显示和隐藏
+        const jp = document.querySelector('.box_jp')
+        const bc = document.querySelector('.box_bc')
+        const sj = document.querySelector('.box_sj')
+        const jqxx = document.querySelector('.box_jqxx')
+        const qdkf = document.querySelector('.box_qdkf')
+        const fixed = document.querySelector('.fixed')
+        const tp = document.querySelector('.top')
+        window.addEventListener('scroll', () => {
+            const srcoll = document.documentElement.scrollTop
+            // console.log(srcoll);
+            if (srcoll >= jp.offsetTop) {
+                fixed.style.opacity = 1
+            } else {
+                fixed.style.opacity = 0
+            }
+        })
+
+        // 侧边栏tab切换
+        fixed.addEventListener('click', e => {
+            const { tagName, dataset } = e.target
+            if (tagName === 'A' && dataset.index) {
+                console.log(1);
+                // if (old) old.classList.remove('active')
+                document.querySelector('.fixed .active').classList.remove('active')
+                e.target.classList.add('active')
+                // const o = document.querySelector(`.box_${dataset.index}`).offsetTop
+                // console.log(o);
+                document.documentElement.scrollTop = document.querySelector(`.box_${dataset.index}`).offsetTop
+            }
+        })
+        tp.addEventListener('click', () => document.documentElement.scrollTop = 0)
+
+        window.addEventListener('scroll', () => {
+            if (document.querySelector('.fixed .active')) document.querySelector('.fixed .active').classList.remove('active')
+
+            const scroll = document.documentElement.scrollTop
+            // console.log(scroll);
+            if (scroll >= jp.offsetTop && scroll < bc.offsetTop) {
+                // console.log(1);
+                document.querySelector('[data-index=jp]').classList.add('active')
+            } else if (scroll >= bc.offsetTop && scroll < sj.offsetTop) {
+                document.querySelector('[data-index=bc]').classList.add('active')
+            } else if (scroll >= sj.offsetTop && scroll < jqxx.offsetTop) {
+                document.querySelector('[data-index=sj]').classList.add('active')
+            } else if (scroll >= jqxx.offsetTop && scroll < qdkf.offsetTop) {
+                document.querySelector('[data-index=jqxx]').classList.add('active')
+            } else if (scroll >= qdkf.offsetTop) {
+                document.querySelector('[data-index=qdkf]').classList.add('active')
+            }
+        })
+
+
+//====================================================================
+        const link = document.getElementById('signin_signup');
+
+
+
+       document.addEventListener("DOMContentLoaded", function() {
+             const urlParams = new URLSearchParams(window.location.search)
+             const user_name = urlParams.get('name');
+            // 如果登陆成功，显示弹窗
+            if (user_name){
+                alert('登陆成功，欢迎'+user_name+'登录本网站！！')
+                //在这里更改"注册与登录"
+                link.href = '#';
+                link.textContent = user_name
+            }
+
+        })
+    </script>
+</body>
+
+</html>
