@@ -1,0 +1,8 @@
+def user(name,age,gender):
+    print(f"名字：{name},年龄{age},性别{gender}")
+
+user("毛玉琳","18","男")                                       #可以直接传递
+
+user(name='毛玉琳',gender='男',age='19')                       #也可以用关键字来传递
+
+user(age=18,name="毛玉琳",gender=11)                           #就算关键字不对称，我们只要带key就可以准确传递

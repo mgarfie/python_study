@@ -1,0 +1,42 @@
+# 导入包
+import mysql.connector
+
+# 连接数据库
+Mysql = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    passwd="123456"
+)
+
+# 首先获取游标对象
+cursor = Mysql.cursor()
+
+# 数据库操作
+cursor.execute("CREATE DATABASE IF NOT EXISTS testDB;") # 创建数据库
+cursor.execute("SHOW DATABASES;")   # 显示数据库
+for item in cursor: print(item)
+
+cursor.execute("USE testdb;") # 选中数据库
+cursor.execute("CREATE TABLE IF NOT EXISTS usermanage (name VARCHAR(255), passwd VARCHAR(255));") # 创建表
+cursor.execute("DELETE FROM usermanage;") # 删除表中的内容
+
+# 插入一条数据
+sql = "INSERT INTO usermanage(name, passwd) VALUES(%s, %s);"
+cursor.execute(sql, ("zhang", "123456"))
+Mysql.commit()  # 必须使用此命令, 否则无法插入成功
+print(cursor.rowcount, "插入数据成功.")
+
+# 批量插入数据
+val = [
+    ('wang', '222222'),
+    ('li', '333333'),
+    ('zhao', '444444')
+]
+cursor.executemany(sql, val)
+Mysql.commit()
+print(cursor.rowcount, "批量插入数据成功.")
+
+# 数据库查询
+cursor.execute("SELECT * FROM usermanage;")
+result = cursor.fetchall()
+for record in result:print(record)
